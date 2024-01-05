@@ -1,0 +1,13 @@
+<h1>Contador</h1>
+<p>{{valorContador}}</p>
+
+
+
+<app-hijo
+[recibeHijo]="mensajePadre"
+(mensajeDesdeHijo)="recibirMensaje($event)"
+(incrementarDesdeHijo)="aumentarContador()"
+(decrementarDesdeHijo)="decrementarContador()"
+></app-hijo>
+
+<h5>Mensaje recibido desde el componente HIJO: {{mensajeRecibidodesdeHijo}}</h5>
