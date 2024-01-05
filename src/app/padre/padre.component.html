@@ -1,8 +1,6 @@
 <h1>Contador</h1>
 <p>{{valorContador}}</p>
 
-
-
 <app-hijo
 [recibeHijo]="mensajePadre"
 (mensajeDesdeHijo)="recibirMensaje($event)"
@@ -11,3 +9,7 @@
 ></app-hijo>
 
 <h5>Mensaje recibido desde el componente HIJO: {{mensajeRecibidodesdeHijo}}</h5>
+
+<h1>{{nombre}}</h1>
+<button type="button" ((click)="saludar()") >Saludar</button>
+<button type="button" ((click)="preguntar()") >Preguntar por Hijo</button>
